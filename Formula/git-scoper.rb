@@ -5,21 +5,21 @@
 class GitScoper < Formula
   desc "Applies git user.name and user.email to every git repository found in a base directory"
   homepage "https://github.com/belaytzev/git-scoper"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.0/git-scoper_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c92441b864d6f01a8bc04ab5165365514ecd6ad78044b35ca44efe7011d15169"
+      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.1/git-scoper_0.1.1_darwin_amd64.tar.gz"
+      sha256 "bb47e228fac882f6fa57f233306648d1269e3d26329f74ff1cec03e06872e9cc"
 
       define_method(:install) do
         bin.install "git-scoper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.0/git-scoper_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d36256c07f54b0e7a16ce2ccf3c2d7d740a4438f962c47c7615988ea972b0346"
+      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.1/git-scoper_0.1.1_darwin_arm64.tar.gz"
+      sha256 "a15c8b7bea3d513fe66bb14bc86562a9231949c74519736335187362c154ae9e"
 
       define_method(:install) do
         bin.install "git-scoper"
@@ -29,15 +29,15 @@ class GitScoper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.0/git-scoper_0.1.0_linux_amd64.tar.gz"
-      sha256 "090411bc786f4a197e9f3c4cc65f07d4cc41fbe6ac5dbcc68b1ac421814405d8"
+      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.1/git-scoper_0.1.1_linux_amd64.tar.gz"
+      sha256 "bdcbd7af7620cc574a876f2be4cc77680cc8a66efe8644a5e9cddfde4d5cd42c"
       define_method(:install) do
         bin.install "git-scoper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.0/git-scoper_0.1.0_linux_arm64.tar.gz"
-      sha256 "a5db350560871b8b488697045314806e27cbd71790a0c8e3c53b21b057b58d81"
+      url "https://github.com/belaytzev/git-scoper/releases/download/v0.1.1/git-scoper_0.1.1_linux_arm64.tar.gz"
+      sha256 "fc0912487647a1217371f4af43f56bcf9a908136a1a1b69da5ab86acbcfb34e4"
       define_method(:install) do
         bin.install "git-scoper"
       end
